@@ -1,0 +1,116 @@
+/* Défilement fluide de secours */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fond général de la page et typographie premium */
+body {
+  background-color: #f7f5fb;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #2b2b2b;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Titres avec la police Outfit : moderne, géométrique et distinctive */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+/* Espace pour ne pas cacher le haut sous le menu fixe */
+.page-content {
+  margin-top: 55px;
+}
+
+/* Espacement vertical entre les sections */
+.section-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Couleur violette */
+.text-purple {
+  color: #7b1fa2;
+}
+
+/* Emplacement pour les aperçus d'images */
+.bloc-image {
+  background-color: #ede7f6;
+  color: #7b1fa2;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Test de modification d'icône */
+.icone-test {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.icone-noire {
+  color: #333333;
+}
+
+.icone-violette {
+  color: #7b1fa2;
+}
+
+
+/* Empêche l'image de dépasser et l'ajuste parfaitement à la carte */
+.image-projet {
+  width: 100%;          /* Prend toute la largeur de la carte */
+  height: 180px;        /* Hauteur fixe pour que toutes les cartes soient égales */
+  object-fit: cover;    /* Remplit l'espace sans déformer l'image (recadre proprement) */
+  border-top-left-radius: 4px;   /* Arrondit les coins du haut comme la carte W3.CSS */
+  border-top-right-radius: 4px;
+  display: block;
+}
+
+/* Centrage des cartes de projet */
+.projets-centrer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projets-centrer::before,
+.projets-centrer::after {
+  display: none;
+}
+
+/* Alignement en hauteur des cartes de compétences */
+#competences .w3-row-padding {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#competences .w3-row-padding::before,
+#competences .w3-row-padding::after {
+  display: none;
+}
+
+#competences .w3-third > .w3-card {
+  height: 100%;
+}
+
+
+section {
+  scroll-margin-top: 60px;
+}
+
+/* Taille et centrage des logos */
+.logo-atelier {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 10px auto;
+  display: block;
+}
